@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARVEL | Comics Index</title>
+    <link rel="stylesheet" href="/styles/mainStyle.css" />
+    <link rel="stylesheet" href="/styles/logInStyle.css" />
+    <link rel="stylesheet" href="/styles/typo.css" />
+    <link rel="stylesheet" href="/styles/comics_indexStyle.css" />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    <script src="/javaScript/index.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Top navigation -->
+
+    <nav class="topnav">
+      <!-- Centered link -->
+      <div class="topnav-centered">
+        <a class="navbar-brand" href="index.html">
+          <div class="logo-image">
+            <img src="/images/Marvel_Logo.svg.png" alt="Marvel logo. White letters, red background." style="height: 6rem" />
+          </div>
+        </a>
+      </div>
+
+      <!-- Left-aligned links (default) -->
+      <a href="/pages/login.html">LOG IN</a>
+
+      <!-- Right-aligned links -->
+      <div class="topnav-right">
+        <a href="/pages/reads.html">MY READS</a>
+      </div>
+    </nav>
+
+<!-- COMICS HERO & TEXT -->
+
+    <div class="hero">
+      <img
+        src="/images/waldemar-brandt-eIOPDU3Fkwk-unsplash.jpg"
+        alt="MARVEL comics"
+        style="width: 100vw"
+      />
+      <div class="hero_text">
+        <h1 class="titel">MARVEL UNLIMITED</h1>
+        <p>READ FOR FREE</p>
+      </div>
+    </div>
+
+   <!-- COMICS INDEX -->
+   
+    <div class="product-overview">
+      <div class="row">
+        <div class="column">    
+          <div class="card product1">
+           <img
+              id="image_onclick_0"
+              class="image image_1"
+              src=""
+              alt="Cover of Marvel Comics Previews (2017)"
+            />
+          </div>
+          <div>
+           <h5 class="comicTitle comicTitle_1 typoSwitch"></h5>
+        </div>
+      </div>
+
+        <div class="column">
+          <div class="card product2">
+            <img
+              id="image_onclick_1"
+              class="image image_2"
+              src=""
+              alt="Cover of Gun Theory (2003) #3, Marvel comic"
+            />
+            <!-- <p class="descr descr_2"></p> -->
+          </div>
+          <div>
+            <h5 class="comicTitle comicTitle_2 typoSwitch"></h5>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card product3">
+            <img
+              id="image_onclick_2"
+              class="image image_3"
+              src=""
+              alt="Cover of Gun Theory (2003) #4, Marvel comic"
+            />
+            <!-- <p class="descr descr_3"></p> -->
+          </div>
+          <div>
+            <h5 class="comicTitle comicTitle_3 typoSwitch"></h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="card product4">
+            <img
+               id="image_onclick_3"
+              class="image image_4"
+              src=""
+              alt="Official Handbook of the Marvel Universe (2004) #10 (MARVEL KNIGHTS)"
+            />
+            <!-- <p class="descr descr_4"></p> -->
+          </div>
+          <div>
+            <h5 class="comicTitle comicTitle_4 typoSwitch"></h5>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card product5">
+            <img
+              id="image_onclick_4"
+              class="image image_5"
+              src=""
+              alt="ULTIMATE X-MEN VOL. 5: ULTIMATE WAR TPB (Trade Paperback)"
+            />
+            <!-- <p class="descr descr_5"></p> -->
+          </div>
+          <div>
+            <h5 class="comicTitle comicTitle_5 typoSwitch"></h5>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card product6">
+            <img
+              id="image_onclick_5"
+              class="image image_6"
+              src=""
+              alt="Official Handbook of the Marvel Universe (2004) #9 (THE WOMEN OF MARVEL)"
+            />
+            <!-- <p class="descr descr_6"></p> -->
+          </div>
+          <div>
+            <h5 class="comicTitle comicTitle_6 typoSwitch"></h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="card product7">
+            <img
+              id="image_onclick_6"
+              class="image image_7"
+              src=""
+              alt="Sentry, the (Trade Paperback, Marvel comic)"
+            />
+            <!-- <p class="descr descr_7"></p> -->
+          </div>
+          <div>
+            <h5 class="comicTitle comicTitle_7 typoSwitch"></h5>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card product8">
+            <img
+              id="image_onclick_7"
+              class="image image_8"
+              src=""
+              alt="Marvel comic: Ant-Man (2003) #3"
+            />
+            <!-- <p class="descr descr_8"></p> -->
+          </div>
+          <div>
+            <h5 class="comicTitle comicTitle_8 typoSwitch"></h5>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card product9">
+            <img
+              id="image_onclick_8"
+              class="image image_9"
+              src=""
+              alt="Marvel comic: X-Men: Days of Future Past (Trade Paperback)"
+            />
+            <!-- <p class="descr descr_9"></p> -->
+          </div>
+          <div>
+            <h5 class="comicTitle comicTitle_9 typoSwitch"></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <img src="" alt="" id="image_modal" class="image">
+        <span id="spanClose" class="close">&times;</span>
+        <h5 id="title_modal"></h5>
+        <p id="descr_modal" class="descr"></p>
+       
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="l-footer">
+        <a class="navbar-brand" href="index.html">
+          <div class="logo-image">
+            <img src="/images/marvel-logo-png-10.png" alt="Marvel logo. White M, red background."/>
+          </div>
+        </a>
+      </div>
+      <ul class="r-footer">
+        <li>
+          <h6>Social</h6>
+          <ul class="box">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </li>
+        <li class="features">
+          <h6>Information</h6>
+          <ul class="box h-box">
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li>
+          <h6>Legal</h6>
+          <ul class="box">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="bottom-footer">
+        <p>adrienn f ❤︎ TWENTY•TWENTY•ONE</p>
+      </div>
+    </footer>
+
+
+      </script>
+  </body>
+</html>
