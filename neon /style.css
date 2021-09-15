@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("MadsenseFreeTrial-qZmDV.otf");
+  /* font-family: Shadows Into Light, sans-serif ; */
+}
+
+html {
+  background-color: rgb(58, 57, 57);
+}
+
+.sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  /* background-image: radial-gradient(
+    ellipse 50% 50% at 50% 50%,
+    #acafa2,
+    transparent
+  ); */
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  font-family: myFirstFont;
+  font-size: 20rem;
+  /* font-stretch: narrower; */
+  color: #ffffff;
+  text-shadow: 0 0 30px #c3ec63, 
+		0 0 10px rgba(212, 230, 161, 0.41), 
+		0 0 100px #d1e6a1, 
+		0 0 500px #cef367, 
+		5px 9px 5px rgba(0, 0, 0, 0.5);
+    animation: glow 1s ease-in-out infinite alternate;  
+    
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ebebeb;
+    text-shadow:0 0 30px #c3ec63, 
+    0 0 10px rgba(212, 230, 161, 0.41), 
+    0 0 100px #d1e6a1, 
+    0 0 500px #cef367, 
+    5px 9px 5px rgba(0, 0, 0, 0.5);
+  }
+  28%,
+  33% {
+    color: #8f8e8e;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #414141;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #ffffff;
+    text-shadow: none;
+  }
+  100% {
+    color: #3d3d3d;
+    text-shadow:0 0 30px #c3ec63, 
+		0 0 10px rgba(212, 230, 161, 0.41), 
+		0 0 100px #d1e6a1, 
+		0 0 500px #cef367, 
+		5px 9px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
