@@ -612,12 +612,13 @@ ul {
   .bgimg-1 {
     max-width: 100vw;
   }
+}
 
   @media only screen and (max-width: 414px) {
     .bgimg-4 {
       max-height: 500px;
     }
-  
+  }
 
 @media only screen and (max-width: 414px) {
   .xlarge {
@@ -640,12 +641,12 @@ ul {
     font-size: 10px;
   
 }
+}
 @media only screen and (max-width: 414px) {
   .split {
     flex-direction: row;
     font-size: 0.5em;
   }
-
 
   .split > * {
     flex-basis: 100%;
@@ -655,6 +656,7 @@ ul {
     margin-left: 2em;
   }
 }
+
 
 @media only screen and (max-width: 414px) {
   .black {
