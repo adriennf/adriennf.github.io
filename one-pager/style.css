@@ -98,7 +98,7 @@ video {
 
 @font-face {
   font-family: "titel";
-  src: url("/font/konstruktor.regular.otf");
+  src: url("font/konstruktor.regular.otf");
 }
 
 /* overflow aid */
