@@ -16,8 +16,8 @@ body {
   background-color: white;
   position: relative;
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  height: 90vh;
+  /* overflow: hidden; */
 }
 
 .blend {
@@ -34,14 +34,14 @@ h1 {
   animation-delay: 5s;
   animation-fill-mode: forwards;
 }
-@keyframes fadeOut {
+/* @keyframes fadeOut {
   from {
     color: rgb(0, 255, 255);
   }
   to {
     color: rgba(255, 255, 255);
   }
-}
+} */
 
 /* Background Animation */
 
@@ -149,6 +149,37 @@ p {
   color: red;
 }
 
+.clipping {
+  position: absolute;
+  z-index: -1;
+  height: 50vh;
+  width: 100vw;
+  margin-top: 0;
+  background-color: rgba(211, 210, 210, 0.199);
+  clip-path: polygon(0 0, 100% 0%, 100% 40%, 0 80%);
+}
+
+
+.lni {
+  margin-bottom: 1rem;
+}
+
+.lni-html5:hover {
+  color: orange;
+}
+
+.lni-css3:hover {
+  color: blue;
+}
+
+.lni-javascript:hover {
+  color: yellow;
+}
+
+.cheers {
+  margin: 1rem;
+}
+
 footer {
   position: fixed;
   flex-direction: row;
@@ -179,7 +210,7 @@ footer {
     height: 50%;
   }
 
-  h2, 
+  h2,
   p {
     font-size: 3vw;
   }
@@ -191,5 +222,4 @@ footer {
   footer {
     font-size: 0.5rem;
   }
-
 }
