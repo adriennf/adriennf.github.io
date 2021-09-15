@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="stopwatch-container">
+      <div class="circle">
+        <div class="name">
+          <h1>SKMEI</h1>
+        </div>
+        <div class="timer" id="display">00:00:00</div>
+        <div class="buttons">
+          <div class="start" id="start" onclick="startButton()">START</div>
+          <div class="reset" id="reset" onclick="resetButton()">RESET</div>
+          <div class="stop" id="stop" onclick="stopButton()">STOP</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

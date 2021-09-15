@@ -1,0 +1,81 @@
+body {
+  box-sizing: border-box;
+  background-color: #2c3347;
+}
+
+.stopwatch-container {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  padding-top: 10vh;
+}
+
+.circle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 600px;
+  border: solid lightgrey 0.3em;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1.2em grey, 0 0 2em 2em lightgrey;
+}
+
+h1 {
+  position: absolute;
+  top: 1em;
+  left: 4.5em;
+  font-size: 3em;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: gold;
+  text-shadow: 0 0 0px #fff, 0 0 50px #f2c94c;
+}
+
+.timer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 6em;
+}
+
+.buttons {
+  width: 50%;
+  position: absolute;
+  bottom: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#start,
+#reset,
+#stop {
+  height: 3rem;
+  width: 5rem;
+  font-size: 0.5rem;
+  text-align: center;
+  padding-top: 2rem;
+  border: lightgray solid 0.2em;
+  border-radius: 50%;
+}
+
+.start {
+  background-color: greenyellow;
+}
+
+.reset {
+  background-color: gold;
+}
+
+.stop {
+  background-color: orangered;
+}
