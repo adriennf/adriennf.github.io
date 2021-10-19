@@ -1,0 +1,79 @@
+/*   - Media Queries - */
+// Large devices
+@media (min-width: 830px) {
+  .portfolio {
+    &__grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+/* // Medium devices (tablets, less than 829px) */
+@media (max-width: 832px) {
+  .body {
+    width: 50%;
+    height: 50%;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  p {
+    font-size: 1vw;
+  }
+
+  h1 {
+    word-spacing: 0.2rem;
+  }
+
+  .column {
+    flex: 1;
+    margin: 1rem 4rem;
+  }
+
+  .fa {
+    font-size: 0.1rem;
+  }
+
+  footer {
+    font-size: 0.5rem;
+  }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1.5) rotate(360deg) translate(-50%, -50%);
+      opacity: 0.6;
+    }
+  }
+
+  .header {
+    margin: 1rem 0;
+  }
+
+  .about {
+    margin: 1rem 0;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 3vw;
+  }
+}

@@ -1,0 +1,116 @@
+.bounce-in-right {
+  animation: bounce-in-right 2s ease;
+}
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.textBanner {
+  width: 100%;
+  overflow: hidden;
+  background-color: #242625;
+  &__inner {
+    display: flex;
+    & h2 {
+      font-size: 2vw;
+      white-space: nowrap;
+      animation: blaBanner 20s linear infinite;
+      color: rgb(182, 179, 179);
+      transition: color 0.3s linear;
+      &:hover {
+        color: yellow;
+      }
+    }
+  }
+}
+
+@keyframes blaBanner {
+  0% {
+    transform: translate(60%, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.textBanner2 {
+  width: 100%;
+  overflow: hidden;
+  &__inner {
+    display: flex;
+    & h2 {
+      font-size: 2vw;
+      white-space: nowrap;
+      animation: blaBanner2 25s linear infinite;
+      color: rgb(31, 31, 31);
+      transition: color 0.3s linear;
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+}
+
+@keyframes blaBanner2 {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin: 6.25rem 4rem;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#skills {
+  margin: 0 4rem;
+}
+
+.checked {
+  color: $accent;
+}
+
+.about {
+  overflow: hidden;
+  background-color: cadetblue;
+}
+
+.container-skills {
+  padding-top: 1rem;
+
+  .fa-star {
+    padding: 0.5rem;
+  }
+}

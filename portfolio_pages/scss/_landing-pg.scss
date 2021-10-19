@@ -1,0 +1,105 @@
+body {
+  display: block;
+  font-family: $primary-font;
+}
+
+.wrapper {
+  background: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+.blend {
+  mix-blend-mode: difference;
+
+  -webkit-mix-blend-mode: difference;
+  -moz-mix-blend-mode: difference;
+  -o-mix-blend-mode: difference;
+  -ms-mix-blend-mode: difference;
+}
+
+h1 {
+  font-family: $titel-font;
+  font-size: 8rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  color: #00fafa;
+  animation: fadeOut 10s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.hero__title {
+  position: absolute;
+  width: 90vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  // width: clamp(200px, 50%, 800px);
+}
+
+.link-contact {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px $titelRed;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 12s ease-in infinite;
+  &:nth-child(2n) {
+    border-color: blue;
+  }
+  &:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+  &:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+  &:nth-child(4) {
+    animation-delay: 6s;
+    left: 11vw;
+    top: 10vh;
+  }
+  &:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+  &:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+
+}
+
+/* Background Animation */
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(4) rotate(360deg) translate(-50%, -50%);
+    opacity: 0.7;
+  }
+}
+
