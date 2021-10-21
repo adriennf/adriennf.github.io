@@ -10,7 +10,6 @@ body {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
-  
 }
 
 .blend {
@@ -45,6 +44,7 @@ h1 {
 }
 
 .link-contact {
+  margin-top: 2rem;
   font-weight: 300;
   font-size: 2rem;
 }
@@ -87,7 +87,6 @@ h1 {
     left: 50vw;
     top: 10vh;
   }
-
 }
 
 /* Background Animation */
@@ -102,4 +101,3 @@ h1 {
     opacity: 0.7;
   }
 }
-

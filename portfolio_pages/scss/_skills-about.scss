@@ -1,3 +1,4 @@
+// HEADER
 .bounce-in-right {
   animation: bounce-in-right 2s ease;
 }
@@ -18,6 +19,8 @@
   }
 }
 
+// BANNER
+
 .textBanner {
   width: 100%;
   overflow: hidden;
@@ -25,7 +28,7 @@
   &__inner {
     display: flex;
     & h2 {
-      font-size: 2vw;
+      font-size: 1.5rem;
       white-space: nowrap;
       animation: blaBanner 20s linear infinite;
       color: rgb(182, 179, 179);
@@ -39,7 +42,7 @@
 
 @keyframes blaBanner {
   0% {
-    transform: translate(60%, 0);
+    transform: translate(90%, 0);
   }
   100% {
     transform: translate(-100%, 0);
@@ -52,7 +55,7 @@
   &__inner {
     display: flex;
     & h2 {
-      font-size: 2vw;
+      font-size: 1.5rem;
       white-space: nowrap;
       animation: blaBanner2 25s linear infinite;
       color: rgb(31, 31, 31);
@@ -73,6 +76,14 @@
   }
 }
 
+// ABOUT
+
+.about {
+  overflow: hidden;
+  background-color: $bg-color;
+  padding: 4rem 0 5rem 4rem;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -85,7 +96,7 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  margin: 6.25rem 4rem;
+  align-items: stretch;
 }
 
 .row:after {
@@ -94,23 +105,85 @@
   clear: both;
 }
 
-#skills {
-  margin: 0 4rem;
+.about-me__text {
+  max-width: 80%;
+  margin-right: 6rem;
+  font-size: 1rem;
+}
+
+table {
+  text-align: left;
+  border-collapse: collapse;
+  margin: 0 4rem 0 10rem;
+  max-width: 50%;
+}
+
+th {
+  font-size: x-large;
+  padding-left: calc(1rem - 0.0672269em);
+}
+
+.sidebar {
+  border-left: 0.4rem solid $accent;
+}
+
+.td__name {
+  width: 30%;
+  padding-right: 2rem;
+}
+
+tr {
+  height: 3rem;
+}
+
+.tfoot__text {
+  padding: 1rem 0;
 }
 
 .checked {
   color: $accent;
 }
 
-.about {
-  overflow: hidden;
-  background-color: cadetblue;
+.fa-star {
+  font-size: 0.5rem;
+  padding: 0 3rem;
 }
 
-.container-skills {
-  padding-top: 1rem;
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
 
-  .fa-star {
-    padding: 0.5rem;
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.fade-in {
+  animation: fade-in 2s ease-in-out both;
+}
+
+.scrolled.fade-in-bottom {
+  animation: fade-in-bottom 2s ease-in-out both;
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

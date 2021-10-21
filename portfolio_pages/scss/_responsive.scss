@@ -8,6 +8,15 @@
   }
 }
 
+.about-me__text {
+  max-width: 100%;
+}
+
+.fa-star {
+  font-size: 0.1rem;
+  padding: 0rem;
+}
+
 /* // Medium devices (tablets, less than 829px) */
 @media (max-width: 832px) {
   .body {
@@ -29,24 +38,29 @@
 
   .column {
     flex: 1;
-    margin: 1rem 4rem;
+    margin: 2rem;
   }
 
   .fa {
     font-size: 0.1rem;
-  }
-
-  footer {
-    font-size: 0.5rem;
+    padding: 0.5rem;
   }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 2rem;
   }
+  .about-me__text {
+    max-width: 100%;
+    font-size: 1rem;
+  }
 
+  .fa-star {
+    font-size: 0.1rem;
+    padding: 0;
+  }
 }
 
 /* // X-Small devices (portrait phones, less than 576px) */
@@ -66,14 +80,85 @@
     margin: 1rem 0;
   }
 
-  .about {
-    margin: 1rem 0;
-  }
-  h3 {
+  .link-contact {
+    margin: 0.8rem;
     font-size: 1.5rem;
   }
 
+  .type-titel {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .textBanner {
+    & h2 {
+      font-size: 4vw;
+      margin: 1rem 0;
+    }
+  }
+
+  .textBanner2 {
+    & h2 {
+      font-size: 4vw;
+      margin: 1rem 0;
+    }
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    flex: 1;
+  }
+
+  .about {
+    padding: 1rem;
+  }
+
+  .about-me__text {
+    max-width: 100%;
+  }
+
   p {
-    font-size: 3vw;
+    font-size: 1rem;
+  }
+
+  table {
+    margin-right: 4rem;
+    max-width: 100%;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .type-titel {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .type-titel {
+    font-size: 1rem;
+  }
+
+  .portfolio__item {
+    width: 18rem;
+  }
+
+  .portfolio__content {
+    margin: 1rem;
+  }
+
+  .fa {
+    font-size: 0.1rem;
+    padding: 0.1rem;
+  }
+
+  .about-me {
+    width: 15rem;
   }
 }

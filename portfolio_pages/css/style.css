@@ -79,6 +79,7 @@ h1 {
 }
 
 .link-contact {
+  margin-top: 2rem;
   font-weight: 300;
   font-size: 2rem;
 }
@@ -290,7 +291,7 @@ h1 {
 }
 
 .textBanner__inner h2 {
-  font-size: 2vw;
+  font-size: 1.5rem;
   white-space: nowrap;
   -webkit-animation: blaBanner 20s linear infinite;
           animation: blaBanner 20s linear infinite;
@@ -305,8 +306,8 @@ h1 {
 
 @-webkit-keyframes blaBanner {
   0% {
-    -webkit-transform: translate(60%, 0);
-            transform: translate(60%, 0);
+    -webkit-transform: translate(90%, 0);
+            transform: translate(90%, 0);
   }
   100% {
     -webkit-transform: translate(-100%, 0);
@@ -316,8 +317,8 @@ h1 {
 
 @keyframes blaBanner {
   0% {
-    -webkit-transform: translate(60%, 0);
-            transform: translate(60%, 0);
+    -webkit-transform: translate(90%, 0);
+            transform: translate(90%, 0);
   }
   100% {
     -webkit-transform: translate(-100%, 0);
@@ -337,7 +338,7 @@ h1 {
 }
 
 .textBanner2__inner h2 {
-  font-size: 2vw;
+  font-size: 1.5rem;
   white-space: nowrap;
   -webkit-animation: blaBanner2 25s linear infinite;
           animation: blaBanner2 25s linear infinite;
@@ -372,6 +373,12 @@ h1 {
   }
 }
 
+.about {
+  overflow: hidden;
+  background-color: cadetblue;
+  padding: 4rem 0 5rem 4rem;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,7 +405,9 @@ h1 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin: 6.25rem 4rem;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .row:after {
@@ -407,28 +416,114 @@ h1 {
   clear: both;
 }
 
-#skills {
-  margin: 0 4rem;
+.about-me__text {
+  max-width: 80%;
+  margin-right: 6rem;
+  font-size: 1rem;
+}
+
+table {
+  text-align: left;
+  border-collapse: collapse;
+  margin: 0 4rem 0 10rem;
+  max-width: 50%;
+}
+
+th {
+  font-size: x-large;
+  padding-left: calc(1rem - 0.0672269em);
+}
+
+.sidebar {
+  border-left: 0.4rem solid #f9440a;
+}
+
+.td__name {
+  width: 30%;
+  padding-right: 2rem;
+}
+
+tr {
+  height: 3rem;
+}
+
+.tfoot__text {
+  padding: 1rem 0;
 }
 
 .checked {
   color: #f9440a;
 }
 
-.about {
-  overflow: hidden;
-  background-color: cadetblue;
+.fa-star {
+  font-size: 0.5rem;
+  padding: 0 3rem;
 }
 
-.container-skills {
-  padding-top: 1rem;
+.js-scroll {
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
-.container-skills .fa-star {
-  padding: 0.5rem;
+.js-scroll.scrolled {
+  opacity: 1;
 }
 
-/* Skew Forward */
+.scrolled.fade-in {
+  -webkit-animation: fade-in 2s ease-in-out both;
+          animation: fade-in 2s ease-in-out both;
+}
+
+.scrolled.fade-in-bottom {
+  -webkit-animation: fade-in-bottom 2s ease-in-out both;
+          animation: fade-in-bottom 2s ease-in-out both;
+}
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* contact */
 .header {
   margin: 1rem 0;
@@ -500,7 +595,7 @@ footer {
   background-color: black;
   color: white;
   padding: 10px;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 /*   - Media Queries - */
@@ -509,6 +604,15 @@ footer {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.about-me__text {
+  max-width: 100%;
+}
+
+.fa-star {
+  font-size: 0.1rem;
+  padding: 0rem;
 }
 
 /* // Medium devices (tablets, less than 829px) */
@@ -530,20 +634,26 @@ footer {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    margin: 1rem 4rem;
+    margin: 2rem;
   }
   .fa {
     font-size: 0.1rem;
-  }
-  footer {
-    font-size: 0.5rem;
+    padding: 0.5rem;
   }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 2rem;
+  }
+  .about-me__text {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+  .fa-star {
+    font-size: 0.1rem;
+    padding: 0;
   }
 }
 
@@ -576,14 +686,73 @@ footer {
   .header {
     margin: 1rem 0;
   }
-  .about {
-    margin: 1rem 0;
-  }
-  h3 {
+  .link-contact {
+    margin: 0.8rem;
     font-size: 1.5rem;
   }
+  .type-titel {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .textBanner h2 {
+    font-size: 4vw;
+    margin: 1rem 0;
+  }
+  .textBanner2 h2 {
+    font-size: 4vw;
+    margin: 1rem 0;
+  }
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .about {
+    padding: 1rem;
+  }
+  .about-me__text {
+    max-width: 100%;
+  }
   p {
-    font-size: 3vw;
+    font-size: 1rem;
+  }
+  table {
+    margin-right: 4rem;
+    max-width: 100%;
+  }
+  tr {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .type-titel {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .type-titel {
+    font-size: 1rem;
+  }
+  .portfolio__item {
+    width: 18rem;
+  }
+  .portfolio__content {
+    margin: 1rem;
+  }
+  .fa {
+    font-size: 0.1rem;
+    padding: 0.1rem;
+  }
+  .about-me {
+    width: 15rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

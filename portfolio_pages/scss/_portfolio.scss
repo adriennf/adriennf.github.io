@@ -1,5 +1,5 @@
 .portfolios {
-  background-color: rgb(57, 56, 56);
+  background-color: $bg-gray;
 }
 
 .portfolio {
@@ -11,7 +11,7 @@
 
   &__item {
     text-align: center;
-    background: #242625;
+    background: $bg-dark;
     border-radius: 0.625rem;
     box-shadow: 1.563rem 1.563rem 50px #1b1c1b, -1.563rem -1.563rem 50px #2d302f;
     overflow: hidden;
@@ -51,8 +51,7 @@
   position: relative;
   // max-width: 70rem;
   margin: 0 4rem;
-  // border: 1px solid pink;
-
+  
   &--pall {
     padding: 4.5rem 0;
   }

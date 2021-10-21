@@ -214,8 +214,6 @@ $(".fa-edit").click(function () {
   $("input[type='text']").fadeToggle();
 });
 
-document.querySelector('.search-icon').addEventListener('click', () => {
-
-  document.querySelector('.search-input').classList.toggle('active');
+document.querySelector(".search-icon").addEventListener("click", () => {
+  document.querySelector(".search-input").classList.toggle("active");
 });
-

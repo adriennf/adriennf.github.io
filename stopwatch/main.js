@@ -6,7 +6,7 @@ let sec = 0;
 let stoptime = true;
 
 let start = document.querySelector(".start");
-start.onclick = startTimer
+start.onclick = startTimer;
 
 function startTimer() {
   if (stoptime == true) {
