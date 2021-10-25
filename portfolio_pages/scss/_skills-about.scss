@@ -42,7 +42,7 @@
 
 @keyframes blaBanner {
   0% {
-    transform: translate(90%, 0);
+    transform: translate(100%, 0);
   }
   100% {
     transform: translate(-100%, 0);
@@ -55,9 +55,9 @@
   &__inner {
     display: flex;
     & h2 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       white-space: nowrap;
-      animation: blaBanner2 25s linear infinite;
+      animation: blaBanner2 20s linear infinite;
       color: rgb(31, 31, 31);
       transition: color 0.3s linear;
       &:hover {
@@ -82,6 +82,13 @@
   overflow: hidden;
   background-color: $bg-color;
   padding: 4rem 0 5rem 4rem;
+}
+
+.about-th {
+  height: 3rem;
+  margin: 0;
+  padding-top: 0.5rem;
+  font-weight: bold;
 }
 
 .row {
@@ -118,9 +125,11 @@ table {
   max-width: 50%;
 }
 
-th {
+th,
+.about-th {
   font-size: x-large;
   padding-left: calc(1rem - 0.0672269em);
+  
 }
 
 .sidebar {

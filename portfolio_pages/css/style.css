@@ -306,8 +306,8 @@ h1 {
 
 @-webkit-keyframes blaBanner {
   0% {
-    -webkit-transform: translate(90%, 0);
-            transform: translate(90%, 0);
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
   }
   100% {
     -webkit-transform: translate(-100%, 0);
@@ -317,8 +317,8 @@ h1 {
 
 @keyframes blaBanner {
   0% {
-    -webkit-transform: translate(90%, 0);
-            transform: translate(90%, 0);
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
   }
   100% {
     -webkit-transform: translate(-100%, 0);
@@ -338,10 +338,10 @@ h1 {
 }
 
 .textBanner2__inner h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   white-space: nowrap;
-  -webkit-animation: blaBanner2 25s linear infinite;
-          animation: blaBanner2 25s linear infinite;
+  -webkit-animation: blaBanner2 20s linear infinite;
+          animation: blaBanner2 20s linear infinite;
   color: #1f1f1f;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
@@ -377,6 +377,13 @@ h1 {
   overflow: hidden;
   background-color: cadetblue;
   padding: 4rem 0 5rem 4rem;
+}
+
+.about-th {
+  height: 3rem;
+  margin: 0;
+  padding-top: 0.5rem;
+  font-weight: bold;
 }
 
 .row {
@@ -429,7 +436,8 @@ table {
   max-width: 50%;
 }
 
-th {
+th,
+.about-th {
   font-size: x-large;
   padding-left: calc(1rem - 0.0672269em);
 }
