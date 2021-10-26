@@ -48,7 +48,7 @@
 }
 
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 768px) {
+@media (max-width: 794px) {
   h1 {
     font-size: 2rem;
   }
@@ -140,7 +140,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 281px) and (max-width: 320px) {
   .type-titel {
     font-size: 1rem;
   }
@@ -150,7 +150,7 @@
   }
 
   .portfolio__content {
-    margin: 1rem;
+    margin: 1rem 1rem 0;
   }
 
   .fa {
@@ -160,5 +160,35 @@
 
   .about-me {
     width: 15rem;
+  }
+
+  .td__name {
+    padding-right: 1rem;
+  }
+
+  #a4fbd1e2-edc2-431c-b11d-f5395f4f8a37 {
+    width: 200px;
+    height: 200px;
+    }
+}
+
+// Galaxy Fold
+
+@media (max-width: 280px) {
+  .container {
+    margin: 0 0.5rem;
+}
+
+  .portfolio__item {
+    width: 16rem;
+  }
+
+  .js-scroll {
+    width: 15rem; 
+  }
+
+ #a4fbd1e2-edc2-431c-b11d-f5395f4f8a37 {
+  width: 200px;
+  height: 200px;
   }
 }

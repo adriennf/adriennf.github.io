@@ -39,6 +39,11 @@
     line-height: 1.2;
     color: $titelRed;
     margin-bottom: 0.5rem;
+
+    &:hover {
+      border-top: dotted 1px $titelRed;
+      border-bottom: dotted 1px $titelRed;
+    }
   }
 
   &__description {
